@@ -27,28 +27,29 @@
   </head>
   <body>
     <!-- Header / Hero Banner -->
-    <header>
-      <div class="container">
-        <div class="d-flex align-items-center justify-content-center flex-column text-center" style="min-height: 30vh">
-          <div class="mb-3">
-            <!-- Animated SVG Wizard Hat -->
-            <svg class="wiggle" width="100" height="100" viewBox="0 0 100 100" style="margin-bottom: 1rem">
-              <circle cx="50" cy="50" r="45" fill="none" stroke="#00C4B4" stroke-width="4" />
-              <path d="M30,30 L70,30 L50,10 L30,30" fill="#00C4B4" stroke="#00C4B4" stroke-width="2" />
-              <path d="M45,30 L55,30 L50,20 L45,30" fill="#00C4B4" stroke="#00C4B4" stroke-width="2" />
-            </svg>
-          </div>
-          <h1 style="font-family: 'Poppins', sans-serif; font-size: 48px; color: #222">
-            Become a Web Dev Wizard!
-          </h1>
-          <p class="mt-3 mb-4" style="font-size: 20px; color: #333">
-            Join our fun, hands-on Telegram class to master HTML, CSS, &amp; more!
-          </p>
-          <a href="#register" class="btn yellow-btn" style="font-size: 16px; padding: 12px 32px">
-            Register Now
-          </a>
-        </div>
+    <header class="gradient-hero py-5 d-flex align-items-center justify-content-center flex-column text-center">
+      <div class="mb-3">
+        <!-- Animated SVG Wizard Hat -->
+        <svg class="wiggle" width="80" height="80" viewBox="0 0 80 80" aria-label="Wizard Hat" role="img" style="margin-bottom: 16px">
+          <g>
+            <ellipse cx="40" cy="70" rx="28" ry="8" fill="#222" opacity="0.15" />
+            <path d="M40 10 Q30 40 20 65 Q40 60 60 65 Q50 40 40 10 Z" fill="#00C4B4" stroke="#222" stroke-width="2" />
+            <circle cx="40" cy="25" r="3" fill="#FFC107" />
+            <circle cx="32" cy="45" r="2" fill="#fff" />
+            <circle cx="48" cy="50" r="2" fill="#fff" />
+          </g>
+        </svg>
       </div>
+      <h1 class="fw-bold" style="font-family: 'Poppins', sans-serif; font-size: 48px; color: #222">
+        Become a Web Dev Wizard!
+      </h1>
+      <p class="mt-3 mb-4" style="font-size: 20px; color: #333">
+        Join our fun, hands-on Telegram class to master HTML, CSS, &amp; more!
+      </p>
+      <a href="#register" class="btn yellow-btn px-4 py-2" style="font-size: 1.25rem" id="hero-cta">
+        Register Now
+      </a>
+    </header>
     </header>
     <!-- End Header -->
     <!-- Why Join Section -->
@@ -294,9 +295,11 @@
             type="submit"
             class="btn yellow-btn w-100 px-4 py-3"
             aria-label="Submit registration form"
+            id="submitBtn"
           >
             Join the Class!
           </button>
+          <!-- Hidden success message -->
           <div
             id="reg-confirm"
             style="display: none; text-align: center; margin-top: 16px"
@@ -591,6 +594,131 @@
       </div>
     </section>
     <!-- End FAQ Section -->
+    <!-- Curriculum Section -->
+    <section class="py-5 bg-light" id="curriculum">
+      <div class="container">
+        <h2 class="text-center mb-5" style="font-family: 'Poppins', sans-serif; color: #222">
+          Your 4-Week Journey to Web Development
+        </h2>
+        
+        <div class="row g-4">
+          <!-- Week 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-header bg-teal text-white">
+                <h3 class="h5 mb-0">Week 1</h3>
+                <p class="mb-0">HTML Basics & Page Structure</p>
+              </div>
+              <div class="card-body">
+                <div class="week-theme mb-3 p-2 bg-light-teal rounded">
+                  <strong>Theme:</strong> "Let's Build Our First Web Page"
+                </div>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><strong>Day 1:</strong> HTML boilerplate, headings, paragraphs, lists, links</li>
+                  <li class="mb-2"><strong>Day 2:</strong> Images, tables, forms</li>
+                  <li class="mb-2"><strong>Day 3:</strong> Semantic tags, page structure</li>
+                </ul>
+                <div class="project-highlight p-2 bg-light-yellow rounded">
+                  <strong>Project:</strong> Start building your personal portfolio
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-header bg-teal text-white">
+                <h3 class="h5 mb-0">Week 2</h3>
+                <p class="mb-0">CSS Basics & Styling</p>
+              </div>
+              <div class="card-body">
+                <div class="week-theme mb-3 p-2 bg-light-teal rounded">
+                  <strong>Theme:</strong> "Making It Beautiful"
+                </div>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><strong>Day 4:</strong> CSS syntax, colors, fonts</li>
+                  <li class="mb-2"><strong>Day 5:</strong> Box Model, margins, padding</li>
+                  <li class="mb-2"><strong>Day 6:</strong> Flexbox for layout</li>
+                </ul>
+                <div class="project-highlight p-2 bg-light-yellow rounded">
+                  <strong>Project:</strong> Style your portfolio with CSS
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-header bg-teal text-white">
+                <h3 class="h5 mb-0">Week 3</h3>
+                <p class="mb-0">Advanced CSS</p>
+              </div>
+              <div class="card-body">
+                <div class="week-theme mb-3 p-2 bg-light-teal rounded">
+                  <strong>Theme:</strong> "Modern & Responsive Design"
+                </div>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><strong>Day 7:</strong> Media Queries</li>
+                  <li class="mb-2"><strong>Day 8:</strong> Pseudo-classes, transitions</li>
+                  <li class="mb-2"><strong>Day 9:</strong> Google Fonts, animations</li>
+                </ul>
+                <div class="project-highlight p-2 bg-light-yellow rounded">
+                  <strong>Project:</strong> Make your portfolio responsive
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-header bg-teal text-white">
+                <h3 class="h5 mb-0">Week 4</h3>
+                <p class="mb-0">JavaScript & Deployment</p>
+              </div>
+              <div class="card-body">
+                <div class="week-theme mb-3 p-2 bg-light-teal rounded">
+                  <strong>Theme:</strong> "Bringing It to Life"
+                </div>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><strong>Day 10:</strong> JS basics, variables, functions</li>
+                  <li class="mb-2"><strong>Day 11:</strong> Event listeners, DOM</li>
+                  <li class="mb-2"><strong>Day 12:</strong> GitHub Pages deployment</li>
+                </ul>
+                <div class="project-highlight p-2 bg-light-yellow rounded">
+                  <strong>Project:</strong> Deploy your portfolio
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Final Project -->
+        <div class="mt-5 p-4 rounded-3" style="background-color: #f8f9fa; border-left: 4px solid #ffc107;">
+          <h3 class="h4 mb-3" style="font-family: 'Poppins', sans-serif;">Final Project</h3>
+          <p class="mb-3">By the end of the course, you'll have built and deployed a complete personal portfolio website including:</p>
+          <ul class="row">
+            <div class="col-md-6">
+              <li>Home section with introduction</li>
+              <li>About Me section with photo</li>
+              <li>Projects showcase with hover effects</li>
+            </div>
+            <div class="col-md-6">
+              <li>Contact form</li>
+              <li>Fully responsive design</li>
+              <li>Dark mode toggle</li>
+            </div>
+          </ul>
+          <div class="text-center mt-4">
+            <a href="#register" class="btn yellow-btn">Enroll Now to Start Building</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Curriculum Section -->
+    
     <!-- Footer -->
     <footer class="py-4" style="background: #008080; color: #fff">
       <div class="container text-center">
@@ -647,5 +775,52 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
     <script src="main.js"></script>
-  </body>
-</html>
+    <!-- Success Modal -->
+    <div
+      class="modal fade"
+      id="successModal"
+      tabindex="-1"
+      aria-labelledby="successModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="successModalLabel">
+              <i class="bi bi-check-circle-fill text-success me-2"></i>
+              Registration Successful!
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-3">
+              <strong>Thank you for registering!</strong> We'll send you an email within 48 hours with the next steps.
+            </p>
+            <p class="mb-3">
+              <i class="bi bi-whatsapp text-success me-2"></i>
+              We'll also add you to our WhatsApp group for class updates.
+            </p>
+            <p class="mb-0">
+              <i class="bi bi-telegram text-success me-2"></i>
+              You'll receive Telegram notifications about class materials and assignments.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn yellow-btn"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </body>
+  </html>

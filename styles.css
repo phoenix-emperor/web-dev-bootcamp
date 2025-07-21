@@ -45,6 +45,119 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-2px);
 }
 
+/* Curriculum Section */
+#curriculum .card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+#curriculum .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+#curriculum .card-header {
+  background: #00C4B4;
+  border: none;
+  padding: 1.25rem;
+}
+
+#curriculum .card-header h3 {
+  color: white;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+#curriculum .card-header p {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+}
+
+#curriculum .card-body {
+  padding: 1.5rem;
+}
+
+#curriculum .week-theme {
+  background-color: rgba(0, 196, 180, 0.1);
+  border-left: 3px solid #00C4B4;
+  font-size: 0.9rem;
+}
+
+#curriculum .project-highlight {
+  background-color: rgba(255, 193, 7, 0.15);
+  border-left: 3px solid #FFC107;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+#curriculum ul {
+  padding-left: 1.25rem;
+}
+
+#curriculum li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+#curriculum li:before {
+  content: "•";
+  color: #00C4B4;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+#curriculum .final-project {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-left: 4px solid #FFC107;
+}
+
+#curriculum .final-project h3 {
+  color: #222;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#curriculum .final-project ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+#curriculum .final-project li {
+  padding: 0.5rem 0;
+  padding-left: 1.75rem;
+  position: relative;
+}
+
+#curriculum .final-project li:before {
+  content: "✓";
+  color: #00C4B4;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  #curriculum .card {
+    margin-bottom: 1.5rem;
+  }
+  
+  #curriculum .final-project {
+    padding: 1.5rem;
+  }
+}
+
 /* Button Styles */
 .yellow-btn {
   background: #FFC107;
